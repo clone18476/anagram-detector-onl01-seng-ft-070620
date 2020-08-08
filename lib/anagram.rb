@@ -7,8 +7,8 @@ class Anagram
     @word = word    # sets the argument to an instance variable, @word
   end
 
-  def match(word_array)
-    word_array.select do |word|
+  def match(word_array)    # defines instance method match to use an array of words as an argument
+    word_array.select do |word|    # 
       word.split("").sort == @word.split("").sort
     end
   end
