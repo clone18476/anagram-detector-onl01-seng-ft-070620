@@ -9,7 +9,7 @@ class Anagram
 
   def match(word_array)    # defines instance method match to use an array of words as an argument
     word_array.select do |word|    # sets the array of words to a block
-      word.split("").sort == @word.split("").sort    # separates each word in the array, and if they have the same letters as a 
+      word.split("").sort == @word.split("").sort    # separates each word in the array, then organizes the letters alphabetically, does the same with the word we are checking, then if the letters are equal the select method returns true, and if not returns false
     end
   end
 end
