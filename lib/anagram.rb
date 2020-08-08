@@ -1,9 +1,9 @@
 # Your code goes here!
 class Anagram     
     # creates an Anagram class
-  attr_accessor :word     # sets an accessor method, word
+  attr_accessor :word     # sets word accessor method defined as word
 
-  def initialize(word)    # initialize to MUST start up with an argument
+  def initialize(word)    # defining initialize MUST start up with a word as an argument
     @word = word    # sets the argument to an instance variable, @word
   end
 
